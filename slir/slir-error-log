@@ -1,0 +1,49 @@
+
+[Thu Feb 19 21:21:25 2015] [174.55.238.89 Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36] Not enough parameters were given.
+
+Available parameters:
+ w = Maximum width
+ h = Maximum height
+ c = Crop ratio (width.height(.cropper?))
+ q = Quality (0-100)
+ b = Background fill color (RRGGBB or RGB)
+ p = Progressive (0 or 1)
+
+Example usage:
+/slir/w300-h300-c1.1/path/to/image.jpg
+
+REFERRER: 
+
+REQUEST: www.p-stevenson.com/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/index.php
+
+#0 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slirrequest.class.php(325): SLIRRequest->getParametersFromURL()
+#1 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slirrequest.class.php(129): SLIRRequest->getParameters()
+#2 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slir.class.php(293): SLIRRequest->initialize()
+#3 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slir.class.php(451): SLIR->getRequest()
+#4 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slir.class.php(264): SLIR->shouldUseRequestCache()
+#5 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/index.php(38): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Feb 19 21:22:12 2015] [174.55.238.89 Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36] Not enough parameters were given.
+
+Available parameters:
+ w = Maximum width
+ h = Maximum height
+ c = Crop ratio (width.height(.cropper?))
+ q = Quality (0-100)
+ b = Background fill color (RRGGBB or RGB)
+ p = Progressive (0 or 1)
+
+Example usage:
+/slir/w300-h300-c1.1/path/to/image.jpg
+
+REFERRER: 
+
+REQUEST: www.p-stevenson.com/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/index.php
+
+#0 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slirrequest.class.php(325): SLIRRequest->getParametersFromURL()
+#1 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slirrequest.class.php(129): SLIRRequest->getParameters()
+#2 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slir.class.php(293): SLIRRequest->initialize()
+#3 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slir.class.php(451): SLIR->getRequest()
+#4 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/core/slir.class.php(264): SLIR->shouldUseRequestCache()
+#5 /hermes/waloraweb040/b264/moo.pstevensoncom/_projects/wordpress/wp-content/plugins/post-script-responsive/slir/index.php(38): SLIR->processRequestFromURL()
+#6 {main}
