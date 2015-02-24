@@ -22,3 +22,5 @@ In short, this plugin modifies "the_content()" function by re-rendering the imag
 == Changelog ==
 = 1.0.0 =
 - Initial release
+= 1.0.1 =
+- Quick Fix of Typo
