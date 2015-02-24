@@ -4,7 +4,7 @@
  * Plugin Name:		Post Script Responsive Images
  * Plugin URI:		//www.p-stevenson.com
  * Description:		SRCSET responsive images on wordpress for content images. | A special thanks to Joe Lencioni (http://shiftingpixel.com) for use of his image resizing script!
- * Version:		1.0.0
+ * Version:		1.0.1
  * Author:		Peter Stevenson
  * Author URI:		//www.p-stevenson.com
  * License: 		GPL-2.0+
