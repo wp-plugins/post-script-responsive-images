@@ -22,7 +22,7 @@ function ps_image_resize( $data = array( ) ){
 	if(!$data['quality']){ $data['quality']='90'; }
 	if(!$data['image']){ $data['image']=''; }
 
-	$baseURL = plugins_url().'/post-script-responsive/';
+	$baseURL = plugins_url().'/post-script-responsive-images/';
 	$responsiveSizes = array(1200,960,768,480,320);
 	$returnURL = '';
 
