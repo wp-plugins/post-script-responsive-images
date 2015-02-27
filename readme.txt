@@ -20,13 +20,17 @@ In short, this plugin modifies "the_content()" and the post thumbnail function b
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
 = 1.0.0 =
 - Initial release
+
 = 1.0.1 =
 - Quick Fix of Typo
+
 = 1.0.2 =
 - Added Support for Post Thumbnail SRCSET
 
 == Screenshots ==
+
 1. Banner Image SRCSET Code
 2. Content Section Image SRCSET Code
