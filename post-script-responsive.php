@@ -1,10 +1,13 @@
 <?php
+
+defined('ABSPATH') or die("Cannot Access This File Directly");
+
 /*!
  * @wordpress-plugin
  * Plugin Name:		Post Script Responsive Images
  * Plugin URI:		//www.p-stevenson.com
  * Description:		SRCSET responsive images on wordpress for content images. | A special thanks to Joe Lencioni (http://shiftingpixel.com) for use of his image resizing script!
- * Version:		1.0.1
+ * Version:		1.0.2
  * Author:		Peter Stevenson
  * Author URI:		//www.p-stevenson.com
  * License: 		GPL-2.0+
@@ -76,7 +79,6 @@ function ps_content_responsive_images ($content){
 			$imgNew[$count] .= $attr . ' ';
 			
 			if (strpos($attr,'class=') !== false) {
-
 				preg_match('/wp-image-[0-9]+/', $attr, $id);
 			}
 			if (strpos($attr,'width=') !== false) {
@@ -87,8 +89,8 @@ function ps_content_responsive_images ($content){
 			}
 		}
 		$id = preg_replace('/wp-image-/', '', $id[0]);
-		$width =$width[0];
-		$height =$height[0];
+		$width = $width[0];
+		$height = $height[0];
 		if($id){
 			$imgAttr = wp_get_attachment_image_src( $id, 'full' );
 			$resizeAttr = array(
@@ -118,6 +120,51 @@ function ps_content_responsive_images ($content){
 	return $content;
 }
 add_action('the_content', 'ps_content_responsive_images');
+
+
+/* AUTO GENERATE RESPONSIVE THUMBNAIL
+================================================== */
+function ps_content_responsive_thumbnail( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
+	if($html ===''){return;}
+
+	$width = '';
+	$height = '';
+
+	preg_match_all('/(alt|title|src|class|height|width)=("[^"]*")/i',$html, $attrs);
+
+	$html = '<img ';
+	foreach( $attrs[0] as $key => $attr){
+		$html .= $attr . ' ';
+		if (strpos($attr,'width=') !== false) {
+			preg_match("/[0-9]+/",$attr,$width);
+		}
+		if (strpos($attr,'height=') !== false) {
+			preg_match("/[0-9]+/",$attr,$height);
+		}
+	}
+	$width = $width[0];
+	$height = $height[0];
+	$imgAttr = wp_get_attachment_image_src( $post_thumbnail_id, 'full' );
+	$resizeAttr = array(
+		'width'=>$imgAttr[1],
+		'height'=>$imgAttr[2],
+		'image'=>$imgAttr[0]
+	);
+	if($width && $height && $width == $height){
+		$resizeAttr['cropratio'] = '1:1';
+	}
+	if($width){
+		$resizeAttr['width'] = $width;
+	}
+	if($height){
+		$resizeAttr['height'] = $height;
+	}
+	$html .= ps_image_resize( $resizeAttr );
+	$html .= ' /> ';
+
+	return $html;
+}
+add_filter( 'post_thumbnail_html', 'ps_content_responsive_thumbnail',0,5);
 
 
 ?>
