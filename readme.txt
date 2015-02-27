@@ -26,3 +26,7 @@ In short, this plugin modifies "the_content()" and the post thumbnail function b
 - Quick Fix of Typo
 = 1.0.2 =
 - Added Support for Post Thumbnail SRCSET
+
+== Screenshots ==
+1. Banner Image SRCSET Code
+2. Content Section Image SRCSET Code
