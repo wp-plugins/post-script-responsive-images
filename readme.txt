@@ -4,11 +4,11 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Responsive, Images, Responsive Images, SRCSET
 Requires at least: 4.0
 <<<<<<< .mine
-Tested up to: 4.1
-Stable tag: 1.0.2
+Tested up to: 4.2.2
+Stable tag: 1.0.3
 =======
-Tested up to: 4.1.1
-Stable tag: 1.0.2
+Tested up to: 4.2.2
+Stable tag: 1.0.3
 >>>>>>> .r1173693
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -34,6 +34,9 @@ In short, this plugin modifies "the_content()" and the post thumbnail function b
 
 = 1.0.2 =
 - Added Support for Post Thumbnail SRCSET
+
+= 1.0.3 =
+- Fixed issue with "|" in alt tags
 
 == Screenshots ==
 
