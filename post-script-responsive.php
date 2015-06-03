@@ -113,7 +113,7 @@ function ps_content_responsive_images ($content){
 	}
 	$forCount = 0;
 	foreach ($imgNew as $key => $image) {
-		$content = preg_replace('~'.$result[0][$forCount].'~',  $image, $content);
+		$content = str_replace($result[0][$forCount],  $image, $content);
 		$forCount++;
 	}
 	
