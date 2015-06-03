@@ -3,8 +3,13 @@ Contributors: Peter Stevenson, Joe Lencioni
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=55UDRSZMRD4KA
 Tags: Responsive, Images, Responsive Images, SRCSET
 Requires at least: 4.0
+<<<<<<< .mine
+Tested up to: 4.1
+Stable tag: 1.0.2
+=======
 Tested up to: 4.1.1
 Stable tag: 1.0.2
+>>>>>>> .r1173693
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
